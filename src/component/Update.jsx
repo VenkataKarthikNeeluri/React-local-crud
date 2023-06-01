@@ -60,7 +60,7 @@ function Update() {
                   </div>
                   <div className="form-group mt-2">
                     <label htmlFor="desc">Description</label>
-                    <textarea name="desc"  id="desc" className='form-control' required />
+                    <textarea name="desc"  id="desc" className='form-control'  value={task.desc} onChange={readValue} required />
                   </div>
                   <div className="form-group mt-2">
                     <input type="submit" name="" id="" value="Update Task" className="btn btn-outline-success" required />
