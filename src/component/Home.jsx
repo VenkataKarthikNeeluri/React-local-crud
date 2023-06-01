@@ -65,7 +65,7 @@ function Home(props) {
                       <NavLink to={`/update/${item.id}`} className="btn btn-info">
                         <i className='bi bi-pencil'></i>
                       </NavLink>
-                      <button className='btn btn-danger float-end'>
+                      <button className='btn btn-danger float-end' onClick={() =>deleteHandler(item.id)}>
                         <i className='bi bi-trash'></i>
                       </button>
                     </div>
